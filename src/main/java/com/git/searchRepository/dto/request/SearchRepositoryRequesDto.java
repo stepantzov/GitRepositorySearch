@@ -1,10 +1,10 @@
-package com.git.search.dto.request;
+package com.git.searchRepository.dto.request;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.Map;
 
-public class SearchRequesDto {
+public class SearchRepositoryRequesDto {
     private static ObjectMapper oMapper = new ObjectMapper();
     private String q;
     private String sort;
@@ -12,7 +12,7 @@ public class SearchRequesDto {
     private int page;
     private int per_page;
 
-    public SearchRequesDto() {
+    public SearchRepositoryRequesDto() {
     }
 
     public String getQ() {
@@ -35,27 +35,27 @@ public class SearchRequesDto {
         return per_page;
     }
 
-    public SearchRequesDto withSearchName(String q) {
+    public SearchRepositoryRequesDto withSearchName(String q) {
         this.q = q;
         return this;
     }
 
-    public SearchRequesDto withSortBy(String sort) {
+    public SearchRepositoryRequesDto withSortBy(String sort) {
         this.sort = sort;
         return this;
     }
 
-    public SearchRequesDto withOrderBy(String order) {
+    public SearchRepositoryRequesDto withOrderBy(String order) {
         this.order = order;
         return this;
     }
 
-    public SearchRequesDto withPagesCount(int page) {
+    public SearchRepositoryRequesDto withPagesCount(int page) {
         this.page = page;
         return this;
     }
 
-    public SearchRequesDto withResultsPerPage(int per_page) {
+    public SearchRepositoryRequesDto withResultsPerPage(int per_page) {
         this.per_page = per_page;
         return this;
     }

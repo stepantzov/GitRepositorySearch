@@ -1,4 +1,4 @@
-package com.git.search.dto.response;
+package com.git.searchRepository.dto.response;
 
 import java.util.HashMap;
 import java.util.Map;

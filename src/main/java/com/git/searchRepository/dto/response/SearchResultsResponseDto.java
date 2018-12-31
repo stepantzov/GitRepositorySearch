@@ -1,4 +1,4 @@
-package com.git.search.dto.response;
+package com.git.searchRepository.dto.response;
 
 import java.util.HashMap;
 import java.util.List;
@@ -17,7 +17,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "items"
 })
 public class SearchResultsResponseDto {
-
     @JsonProperty("total_count")
     private Integer totalCount;
     @JsonProperty("incomplete_results")

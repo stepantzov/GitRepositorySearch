@@ -1,7 +1,7 @@
-package com.git.search.restRequest;
+package com.git.searchRepository.restRequest;
 
 import com.git.requests.RequestSpecification;
-import com.git.search.dto.response.SearchResultsResponseDto;
+import com.git.searchRepository.dto.response.SearchResultsResponseDto;
 import com.git.utils.Properties;
 
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.git.search.dto.response;
+package com.git.searchRepository.dto.response;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -86,7 +86,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "score"
 })
 public class Item {
-
     @JsonProperty("id")
     private Integer id;
     @JsonProperty("node_id")
