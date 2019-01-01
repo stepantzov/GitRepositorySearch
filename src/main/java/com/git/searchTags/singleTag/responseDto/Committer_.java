@@ -1,4 +1,4 @@
-package com.git.searchRepository.dto.response;
+package com.git.searchTags.singleTag.responseDto;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -30,8 +30,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "type",
     "site_admin"
 })
-public class Owner {
-
+public class Committer_ {
     @JsonProperty("login")
     private String login;
     @JsonProperty("id")

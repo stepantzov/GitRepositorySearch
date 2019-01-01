@@ -1,4 +1,4 @@
-package com.git.searchRepository.dto.request;
+package com.git.searchRepository.dto.requestDto;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

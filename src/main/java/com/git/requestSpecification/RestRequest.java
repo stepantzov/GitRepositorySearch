@@ -1,14 +1,12 @@
-package com.git.requests;
+package com.git.requestSpecification;
 
 import io.restassured.response.Response;
-import io.restassured.response.ResponseBody;
-
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
-public class RequestSpecification {
-    public static Response getWithParams(Map pathParams, String basePath) {
+public class RestRequest {
+    public static Response getResponseWithParams(Map pathParams, String basePath) {
         return given()
                 .params(pathParams)
                 .when()
@@ -19,7 +17,7 @@ public class RequestSpecification {
                 .response();
     }
 
-    public static Response getReleasesListWithUrl(String releasesUrl) {
+    public static Response getResponseWithDirectUrl(String releasesUrl) {
         return given()
                 .when()
                 .get(releasesUrl)
