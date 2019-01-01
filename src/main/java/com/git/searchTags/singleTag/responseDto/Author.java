@@ -1,4 +1,4 @@
-package com.git.searchTag.dto.response;
+package com.git.searchTags.singleTag.responseDto;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,35 +11,48 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "sha",
-    "url"
+    "name",
+    "email",
+    "date"
 })
-public class Commit {
-    @JsonProperty("sha")
-    private String sha;
-    @JsonProperty("url")
-    private String url;
+public class Author {
+    @JsonProperty("name")
+    private String name;
+    @JsonProperty("email")
+    private String email;
+    @JsonProperty("date")
+    private String date;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<>();
 
-    @JsonProperty("sha")
-    public String getSha() {
-        return sha;
+    @JsonProperty("name")
+    public String getName() {
+        return name;
     }
 
-    @JsonProperty("sha")
-    public void setSha(String sha) {
-        this.sha = sha;
+    @JsonProperty("name")
+    public void setName(String name) {
+        this.name = name;
     }
 
-    @JsonProperty("url")
-    public String getUrl() {
-        return url;
+    @JsonProperty("email")
+    public String getEmail() {
+        return email;
     }
 
-    @JsonProperty("url")
-    public void setUrl(String url) {
-        this.url = url;
+    @JsonProperty("email")
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @JsonProperty("date")
+    public String getDate() {
+        return date;
+    }
+
+    @JsonProperty("date")
+    public void setDate(String date) {
+        this.date = date;
     }
 
     @JsonAnyGetter

@@ -1,4 +1,4 @@
-package com.git.searchTag.dto.response;
+package com.git.searchTags.tagsList.responseDto;
 
 import java.util.HashMap;
 import java.util.Map;

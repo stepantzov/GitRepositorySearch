@@ -1,9 +1,8 @@
 package com.git.searchRepository;
 
-import com.git.results.SearchResults;
-import com.git.searchRepository.dto.request.SearchRepositoryRequesDto;
-import com.git.searchRepository.dto.response.SearchResultsResponseDto;
-import com.git.searchRepository.restRequest.SearchRepositoryRequest;
+import com.git.searchRepository.dto.requestDto.SearchRepositoryRequesDto;
+import com.git.searchRepository.dto.responseDto.SearchResultsResponseDto;
+import com.git.searchRepository.request.SearchRepositoryRequest;
 
 public class SearchRepository {
     public static SearchResultsResponseDto usingOptions(String q) {
@@ -16,8 +15,9 @@ public class SearchRepository {
                 .convertToMap());
     }
 
-    public static void printTopResultsRepositoryName(SearchResultsResponseDto searchResultsResponseDto) {
-        System.out.println(searchResultsResponseDto.getItems().get(0).getName());
+    public static void printTopResultsRepositoryDetails(SearchResultsResponseDto searchResultsResponseDto) {
+        System.out.println("\nTop results repository  name: " + searchResultsResponseDto.getItems().get(0).getName());
+        System.out.println("Top results repository stars count: " + searchResultsResponseDto.getItems().get(0).getStargazersCount());
     }
 
     public static String getTagsUrl(SearchResultsResponseDto searchResultsResponseDto) {
