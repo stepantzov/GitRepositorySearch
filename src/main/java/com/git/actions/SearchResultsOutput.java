@@ -17,7 +17,7 @@ public class SearchResultsOutput {
         SearchTagResponseDto userTagCompleteData = SearchTagsList.searchForTagByName(listOfTags, releaseTag);
 
         if (userTagCompleteData != null) {
-            Dates.CompareDates(OpenSingleTag.getTagDate(latestTagCompleteData), OpenSingleTag.getTagDate(userTagCompleteData));
+            Dates.CompareTwoDates(OpenSingleTag.getTagDate(latestTagCompleteData), OpenSingleTag.getTagDate(userTagCompleteData));
         } else System.out.println("Please enter existing tag for current repository. ");
 
         SearchTagsList.printTopTagName(listOfTags);

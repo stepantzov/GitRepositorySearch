@@ -1,4 +1,4 @@
-package com.git.searchTags.tagsList.restRequest;
+package com.git.searchTags.tagsList.request;
 
 import com.git.requestSpecification.RestRequest;
 import com.git.searchTags.tagsList.responseDto.SearchTagResponseDto;

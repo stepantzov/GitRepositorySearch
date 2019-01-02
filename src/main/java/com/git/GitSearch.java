@@ -1,3 +1,5 @@
+package com.git;
+
 import com.git.actions.ConsoleReader;
 
 public class GitSearch {
