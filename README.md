@@ -18,7 +18,7 @@ Current application allow to search for repository and tags on Github by using G
 - Install all the necessary prerequisites from above Prerequisites. 
 
 ## Running the application 
-- Open any command or GIT Bash;
+- Open any command line: CMD or GIT Bash;
 - Navigate to the project catalog classpath using command line (for example "C:\maven\GitSearch")
 - Use standard maven commands to run different maven lifecycle actions;
 
