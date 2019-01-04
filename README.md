@@ -2,7 +2,7 @@
 Application for Repository and Release tags search on GitHub using Git API 
 
 ## Getting Started
-Current application allow to search for repository and tags on Github trought GIT API;
+Current application allow to search for repository and tags on Github by using GIT API;
 
 ### Prerequisites
 - Maven;
