@@ -22,7 +22,8 @@ Current application allow to search for repository and tags on Github by using G
 - Navigate to the project catalog classpath using command line C:\maven\GitSearch
 
 Use standard maven commands to run different maven lifecycle actions;
-*To execute application run next maven command:*
+
+**To execute application run next maven command:**
 **mvn package exec:java**
 
 
