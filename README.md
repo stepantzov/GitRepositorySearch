@@ -17,15 +17,15 @@ Current application allow to search for repository and tags on Github by using G
 - Download project from GIT repo using next link https://github.com/stepantzov/GitRepositorySearch.git
 - Install all the necessary prerequisites from above Prerequisites. 
 
-## Running the tests 
+## Running the application 
 - Open any command or GIT Bash;
 - Navigate to the project catalog classpath using command line C:\maven\GitSearch
 
-To execute application run next maven command:
+Use standard maven commands to run different maven lifecycle actions;
+*To execute application run next maven command:*
 **mvn package exec:java**
 
 
-use standard maven commands to run different maven lifecycle actions;
 
 ## Built With
 * [Maven](https://maven.apache.org/) - Dependency Management
