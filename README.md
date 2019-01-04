@@ -23,7 +23,6 @@ Current application allow to search for repository and tags on Github by using G
 - Use standard maven commands to run different maven lifecycle if needed;
 
 To execute application run next maven command:
-
 **mvn package exec:java**
 
 
