@@ -32,6 +32,4 @@ lib/
 /target/
 /.idea/
 
-!/README.md
-
 !/pom.xml
