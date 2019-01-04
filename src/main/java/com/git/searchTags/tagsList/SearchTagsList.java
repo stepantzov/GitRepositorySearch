@@ -1,10 +1,10 @@
 package com.git.searchTags.tagsList;
 
 import com.git.searchTags.tagsList.responseDto.SearchTagResponseDto;
-import com.git.searchTags.tagsList.restRequest.SearchTagRequest;
+import com.git.searchTags.tagsList.request.SearchTagRequest;
 
 public class SearchTagsList {
-    public static SearchTagResponseDto[] usingTagsUrl(String tagUrl) {
+    public static SearchTagResponseDto[] usingDirectTagsUrl(String tagUrl) {
         return SearchTagRequest.getTagsList(tagUrl);
     }
 
