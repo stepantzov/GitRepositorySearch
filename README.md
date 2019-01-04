@@ -7,8 +7,8 @@ Current application allow to search for repository and tags on Github by using G
 ### Prerequisites
 - Maven;
 - Java 8; 
-- RestAssured
-- Jackson
+- RestAssured;
+- Jackson;
 - Junit;
 - Mockito and PowerMock;
 - Suitable Command line (CMD or GIT Bash);
