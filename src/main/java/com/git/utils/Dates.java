@@ -18,9 +18,9 @@ public class Dates {
         }
 
         if (latestTagDate.after(userTagDate)) {
-            System.out.println("Entered tag is older than current latest release tag. ");
+            System.out.print("Entered tag is older than current latest release tag. \n");
         } else if (latestTagDate.equals(userTagDate)) {
-            System.out.println("Entered tag is equals to current latest release tag. ");
-        } else System.out.println("Entered tag is newer than current latest release tag. ");
+            System.out.print("Entered tag is equals to current latest release tag. \n");
+        } else System.out.print("Entered tag is newer than current latest release tag. \n");
     }
 }

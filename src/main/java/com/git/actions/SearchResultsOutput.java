@@ -8,16 +8,16 @@ import com.git.searchTags.tagsList.responseDto.SearchTagResponseDto;
 import com.git.utils.Dates;
 
 public class SearchResultsOutput {
-    static void performSearchWithUserParameters(String repositoryName, String releaseTag) {
+    static void performSearchWithEnteredParameters(String repositoryName, String releaseTag) {
         SearchResultsResponseDto searchResultsResponseDto = SearchRepository.usingOptions(repositoryName);
-        SearchRepository.printTopResultsRepositoryDetails(searchResultsResponseDto);
+        SearchRepository.printTopResultsGitRepositoryDetails(searchResultsResponseDto);
 
-        SearchTagResponseDto[] listOfTags = SearchTagsList.usingTagsUrl(SearchRepository.getTagsUrl(searchResultsResponseDto));
-        SearchTagResponseDto latestTagCompleteData = SearchTagsList.getLatestTag(listOfTags);
+        SearchTagResponseDto[] listOfTags = SearchTagsList.usingDirectTagsUrl(SearchRepository.getTagsUrl(searchResultsResponseDto));
+        SearchTagResponseDto latestTagData = SearchTagsList.getLatestTag(listOfTags);
         SearchTagResponseDto userTagCompleteData = SearchTagsList.searchForTagByName(listOfTags, releaseTag);
 
         if (userTagCompleteData != null) {
-            Dates.CompareTwoDates(OpenSingleTag.getTagDate(latestTagCompleteData), OpenSingleTag.getTagDate(userTagCompleteData));
+            Dates.CompareTwoDates(OpenSingleTag.getTagDate(latestTagData), OpenSingleTag.getTagDate(userTagCompleteData));
         } else System.out.println("Please enter existing tag for current repository. ");
 
         SearchTagsList.printTopTagName(listOfTags);

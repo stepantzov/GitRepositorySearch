@@ -15,7 +15,7 @@ public class ConsoleReader {
             System.out.println("Please enter existing full release tag name (for example: testng-6.9.5) below and press Enter:");
             String releaseTag = br.readLine();
 
-            SearchResultsOutput.performSearchWithUserParameters(repositoryName, releaseTag);
+            SearchResultsOutput.performSearchWithEnteredParameters(repositoryName, releaseTag);
 
         } catch (IOException e) {
             e.printStackTrace();
